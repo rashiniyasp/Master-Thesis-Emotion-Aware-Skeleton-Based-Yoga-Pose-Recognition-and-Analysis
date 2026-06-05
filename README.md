@@ -19,7 +19,7 @@ The end-to-end pipeline operates in three stages:
 2. **Recognition Modules**: Simultaneously classifies the practitioner's emotion and the specific yoga pose being performed.
 3. **Correction & Guidance**: If the pose is identified as incorrect or misaligned, the correction module leverages the classifier's attention mechanisms and nearest-neighbor exemplars to generate biomechanically plausible, joint-level adjustments.
 
-*(Note: Architecture diagrams and flowcharts are discussed below.)*
+
 
 ---
 
@@ -41,11 +41,19 @@ A continuous-time modeling approach designed to capture smooth skeletal dynamics
 *   **Neural ODE Encoding**: Models the temporal evolution of the skeletal sequence as a continuous differential equation, effectively handling variable frame rates.
 *   **Attention Aggregation**: Fuses the multi-view latent representations to suppress noise and highlight informative perspectives.
 
+> [!NOTE]
+> For a detailed analysis and the architecture diagram of this methodology, please check the [Yoga-MAtNODE Repository](https://github.com/rashiniyasp/Yoga-MAtNODE).
+> *(Accepted at ICPR 2026)*
+
 ### DUAL-Pose (Dual-Branch Graph Networks)
 A parallel-branch architecture for static or semi-static pose classification.
 *   **Local Branch**: Uses Graph Convolutional Networks (GCNs) to capture topological relationships between connected joints.
 *   **Global Branch**: Extracts holistic kinematic features such as specific joint angles and limb orientations.
 *   **Fusion**: Concatenates both streams to resolve fine-grained geometric ambiguities that single-branch models miss.
+
+> [!NOTE]
+> For a detailed analysis and the architecture diagram of this methodology, please check the [DUAL-Pose Repository](https://github.com/rashiniyasp/Dual_Pose).
+> *(Accepted at CVPRW 2026)*
 
 ---
 
