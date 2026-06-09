@@ -15,10 +15,11 @@ The system is built upon three core pillars:
 ## 🏗️ System Pipeline
 
 The end-to-end pipeline operates in three stages:
-1. **Feature Extraction**: Captures facial landmarks and 33-joint full-body skeletal topologies (e.g., using MediaPipe) to ensure user privacy by avoiding raw RGB transmission.
+1. **Facial Emotion Recognition**: Detecting human emotions using face images when user shows expression using CNN models
 2. **Recognition Modules**: Simultaneously classifies the practitioner's emotion and the specific yoga pose being performed.
 3. **Correction & Guidance**: If the pose is identified as incorrect or misaligned, the correction module leverages the classifier's attention mechanisms and nearest-neighbor exemplars to generate biomechanically plausible, joint-level adjustments.
 
+<img width="1908" height="430" alt="image" src="https://github.com/user-attachments/assets/da52370b-11aa-4c9f-863a-354d5b3e0eee" />
 
 
 ---
@@ -67,7 +68,9 @@ Pose recognition alone cannot ensure safe practice. The system provides actionab
 *   **Multi-Objective Optimization**: Iteratively adjusts the user's incorrect skeleton to satisfy target-class recognition, while enforcing strict biomechanical constraints (bone-lengths and joint-angles) so the suggested correction is physically possible.
 *   **Segment Refinement**: Isolates the most critical joints (e.g., just the arms or hips) to provide sparse, interpretable feedback rather than overwhelming the user with full-body adjustments.
 
+> [!NOTE]
+> For a visual analysis of ACORN framework, please check the [Drive link]([https://github.com/rashiniyasp/Dual_Pose](https://chat.google.com/dm/oP2mhiAAAAE/QTfM37BhN10/QTfM37BhN10?cls=10)).
 ---
 
 ## 🛡️ Privacy and Ethics
-A core tenant of this framework is the elimination of RGB video storage. By immediately mapping raw camera inputs to skeletal graphs and facial landmarks at the edge, the system inherently protects user identity and environment context, making it suitable for unsupervised home deployment.
+A core tenant of this framework is the elimination of RGB video storage. By immediately mapping raw camera inputs to skeletal graphs and body landmarks at the edge, the system inherently protects user identity and environment context, making it suitable for unsupervised home deployment.
