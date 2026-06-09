@@ -69,7 +69,7 @@ Pose recognition alone cannot ensure safe practice. The system provides actionab
 *   **Segment Refinement**: Isolates the most critical joints (e.g., just the arms or hips) to provide sparse, interpretable feedback rather than overwhelming the user with full-body adjustments.
 
 > [!NOTE]
-> For a visual analysis of ACORN framework, please check the [Drive link]([https://github.com/rashiniyasp/Dual_Pose](https://chat.google.com/dm/oP2mhiAAAAE/QTfM37BhN10/QTfM37BhN10?cls=10)).
+> For a visual analysis of ACORN framework, please check the [Drive link](https://chat.google.com/dm/oP2mhiAAAAE/QTfM37BhN10/QTfM37BhN10?cls=10).
 ---
 
 ## 🛡️ Privacy and Ethics
