@@ -1,7 +1,12 @@
 # Emotion Aware Skeleton-Based Yoga Pose Recognition and Analysis
 
+> **🚀 Live Web App:** [rashi-yoga-iitm.streamlit.app](https://rashi-yoga-iitm.streamlit.app/)  
+> **💻 Code & Implementation:** [Emotion-Based-Yoga-AI-Assistant-](https://github.com/rashiniyasp/Emotion-Based-Yoga-AI-Assistant-)
+
 ## 📌 Overview
 This repository contains the methodology, pipeline architectures, and conceptual overview of the holistic yoga assistance system developed for emotion-aware skeleton-based yoga pose recognition and analysis. 
+
+We have successfully deployed the entire system into a real-time, interactive web application. You can try the live webcam demo at our [deployed Streamlit website](https://rashi-yoga-iitm.streamlit.app/) or view the complete production codebase in our [Implementation Repository](https://github.com/rashiniyasp/Emotion-Based-Yoga-AI-Assistant-).
 
 By replacing raw video feeds with privacy-preserving skeleton keypoints, this project constructs a complete pipeline that not only identifies the yoga pose but also analyses the user's emotional state and provides interpretable, joint-level corrective feedback.
 
