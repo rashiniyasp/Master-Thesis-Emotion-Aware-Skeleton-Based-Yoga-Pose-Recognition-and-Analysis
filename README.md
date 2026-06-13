@@ -1,12 +1,12 @@
 # Emotion Aware Skeleton-Based Yoga Pose Recognition and Analysis
 
-> **🚀 Live Web App:** [rashi-yoga-iitm.streamlit.app](https://rashi-yoga-iitm.streamlit.app/)  
-> **💻 Code & Implementation:** [Emotion-Based-Yoga-AI-Assistant-](https://github.com/rashiniyasp/Emotion-Based-Yoga-AI-Assistant-)
+> **🚀 Live Web App:** [Hugging Face Space: Yoga Asanas Assistant](https://huggingface.co/spaces/rashiniyasp/yogaasanas-assistant)  
+> **💻 Code & Implementation:** [Emotion-Based-Yoga-AI-Assistant](https://github.com/rashiniyasp/Emotion-Based-Yoga-AI-Assistant-)
 
 ## 📌 Overview
 This repository contains the methodology, pipeline architectures, and conceptual overview of the holistic yoga assistance system developed for emotion-aware skeleton-based yoga pose recognition and analysis. 
 
-We have successfully deployed the entire system into a real-time, interactive web application. You can try the live webcam demo at our [deployed Streamlit website](https://rashi-yoga-iitm.streamlit.app/) or view the complete production codebase in our [Implementation Repository](https://github.com/rashiniyasp/Emotion-Based-Yoga-AI-Assistant-).
+We have successfully deployed the entire system into a real-time, interactive web application. You can try the live webcam demo at our [deployed Hugging Face Space](https://huggingface.co/spaces/rashiniyasp/yogaasanas-assistant) or view the complete production codebase in our [Implementation Repository](https://github.com/rashiniyasp/Emotion-Based-Yoga-AI-Assistant-).
 
 By replacing raw video feeds with privacy-preserving skeleton keypoints, this project constructs a complete pipeline that not only identifies the yoga pose but also analyses the user's emotional state and provides interpretable, joint-level corrective feedback.
 
@@ -75,6 +75,15 @@ Pose recognition alone cannot ensure safe practice. The system provides actionab
 
 > [!NOTE]
 > For a visual analysis of ACORN framework, please check the [Drive link](https://drive.google.com/file/d/1aJdbNbTft1Cie3K17ksXjvGdltwS-vwM/view?usp=sharing).
+---
+
+## ☁️ Real-Time Deployment Architecture
+The system is built for low-latency, real-time inference directly from the user's webcam, hosted on scalable cloud infrastructure:
+*   **Hugging Face Spaces**: The application is deployed on Hugging Face Spaces using Docker, providing robust CPU environments for deep learning models. Git LFS is utilized for efficient handling of large model weights and datasets.
+*   **WebRTC Integration**: Live video streaming is handled via `streamlit-webrtc`, processing frames asynchronously to maintain a high framerate without blocking the UI.
+*   **NAT Traversal (TURN/STUN)**: To penetrate strict corporate and cloud firewalls, the system integrates a Twilio TURN server, ensuring reliable P2P video connections globally.
+*   **Dynamic UX Adjustments**: The pose correction module employs dynamic distance thresholds and brief hold times (1.5 seconds) to ensure the feedback loop is forgiving, natural, and highly responsive to human movement.
+
 ---
 
 ## 🛡️ Privacy and Ethics
